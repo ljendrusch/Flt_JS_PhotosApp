@@ -1,0 +1,18 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    # allow self-reference to deprecated members (we do this because otherwise we have
+    # to annotate every member in every test, assert, etc, when we deprecate something)
+    deprecated_member_use_from_same_package: ignore
+  exclude:
+    - "bin/cache/**"
+    # Ignore protoc generated files
+    - "dev/conductor/lib/proto/*"
+
+linter:
+  rules:
+    avoid_print: false
+    prefer_single_quotes: true
+    prefer_relative_imports: ignore
+    directives_ordering: ignore

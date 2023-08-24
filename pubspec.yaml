@@ -1,0 +1,30 @@
+name: pop_capture
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0-12.0.dev <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flex_color_scheme: ^6.1.1
+  flutter_image_slideshow: ^0.1.2
+  google_fonts: ^3.0.1
+  hive: ^2.0.3
+  hive_flutter: ^1.0.0
+  http: ^0.13.4
+  path: ^1.8.1
+  provider: ^6.0.3
+  flutter_map: ^3.0.0
+
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
